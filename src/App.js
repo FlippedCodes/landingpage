@@ -7,14 +7,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello World!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>There is nothing here yet, but if you reload the page you might get lucky!</p>
+        <button onClick={() => window.location.reload(false)}>RELOAD</button>
       </header>
     </div>
   );
