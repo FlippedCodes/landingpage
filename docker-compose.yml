@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.5'
 services:
   main:
     build:
@@ -13,3 +13,4 @@ services:
 
 networks:
   nginx_backend:
+    name: nginx_backend
