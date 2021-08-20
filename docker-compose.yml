@@ -8,3 +8,8 @@ services:
       PORT: ${PORT}
     ports:
     - "${PORT}:80"
+    networks:
+      - nginx_backend
+
+networks:
+  nginx_backend:
