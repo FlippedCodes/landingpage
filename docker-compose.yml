@@ -6,11 +6,8 @@ services:
     restart: always
     environment:
       PORT: ${PORT}
-    # ports:
-    # - "${PORT}:80"
-    networks:
-      - nginx_backend
 
 networks:
-  nginx_backend:
-    name: nginx_backend
+  default:
+    external:
+      name: nginx_backend
